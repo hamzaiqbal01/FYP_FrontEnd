@@ -46,6 +46,8 @@ function App() {
             path="/searchBySymptoms"
             element={<SearchBySymptoms />}
           />
+          {/* test */}
+          p
         </Routes>
         <Footer />
       </BrowserRouter>
