@@ -1,0 +1,34 @@
+.footer {
+  border-top: 1px solid #d1cccc;
+  .logoSection {
+    // border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoSection img {
+    max-width: 22%;
+  }
+  .ContactSection {
+    h4 {
+      font-weight: bold;
+    }
+    .info-section {
+      display: flex;
+      flex-direction: row;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  .QuickLinsSection {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    h4 {
+      font-weight: bold;
+    }
+  }
+}

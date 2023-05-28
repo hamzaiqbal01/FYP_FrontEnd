@@ -1,0 +1,14 @@
+.loginsection {
+  h4 {
+    font-weight: bold;
+  }
+  input[type="checkbox"] {
+    background-color: #d58520 !important;
+  }
+  .createAccountBtn {
+    display: flex;
+    .creat-acc-Link {
+      color: #d58520;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.loginsection h4 {
+  font-weight: bold;
+}
+.loginsection input[type=checkbox] {
+  background-color: #d58520 !important;
+}
+.loginsection .createAccountBtn {
+  display: flex;
+}
+.loginsection .createAccountBtn .creat-acc-Link {
+  color: #d58520;
+}/*# sourceMappingURL=Login.css.map */

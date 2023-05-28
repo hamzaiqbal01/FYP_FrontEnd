@@ -1,0 +1,75 @@
+.search-dise-img h4 {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.search-dise-img .img-upload-section .border-section {
+  height: 40vh;
+  border: 3px dashed #dea35a;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.search-dise-img .img-upload-section .border-section img {
+  max-width: 5vw;
+}
+.search-dise-img .img-upload-section .border-section .file {
+  position: relative;
+  overflow: hidden;
+}
+.search-dise-img .img-upload-section .border-section input {
+  position: absolute;
+  font-size: 50px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.search-dise-img .img-upload-section .border-section .up-btn {
+  background-color: #dea35a;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.search-dise-img .preview-detect-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+.search-dise-img .preview-detect-section Button {
+  border: 1px solid transparent;
+  background-color: #142e38;
+  color: white;
+  border-radius: 20px;
+}
+.search-dise-img .preview-detect-section .preview {
+  height: 25vh;
+  width: 21vw;
+  border-radius: 13px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #142e38;
+  z-index: 2;
+}
+.search-dise-img .preview-detect-section .preview::before {
+  content: ".";
+  background: url("./img/1587106950-wheat.jpg");
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 13px;
+  opacity: 0.8;
+}/*# sourceMappingURL=SearchDiseaseByImage.css.map */

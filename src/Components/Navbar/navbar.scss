@@ -1,0 +1,89 @@
+nav {
+  .navLogo img {
+    max-width: 68px;
+  }
+  .btngroup {
+    justify-self: end;
+    background-color: aqua;
+  }
+  button {
+    img {
+      width: 32px;
+    }
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+      color: white;
+      position: relative;
+      padding: 3px 0px !important;
+    }
+    .active {
+      border-bottom: 2px solid #d58520;
+    }
+
+    li a::after {
+      content: "";
+      position: absolute;
+      background-color: #d58520;
+      height: 1px;
+      width: 0;
+      left: 0;
+      bottom: -2px;
+      transition: 0.3s;
+    }
+
+    a:hover::after {
+      width: 100%;
+    }
+  }
+  .nav-item {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  a {
+    color: #142e38 !important;
+  }
+
+  .btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .lang-select {
+      color: white;
+      background: #142e38;
+      border-radius: 7px;
+    }
+    .login-btn {
+      border: 1px solid #142e38;
+      font-weight: bold;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    #nav-toggle-button {
+      border: 1px solid transparent !important;
+    }
+    #nav-toggle-button:focus {
+      border: 1px solid transparent !important;
+      outline: none !important;
+      box-shadow: 0 0;
+    }
+    .navLogo img {
+      max-width: 68px;
+    }
+    .nav-item {
+      text-align: center;
+      margin: 10px 1px;
+    }
+    .btn-group {
+      position: absolute;
+      right: 84px;
+      top: 36px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.detection-section {
+  h3,
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    word-spacing: 4px;
+  }
+  .short-line {
+    color: #d58520;
+  }
+}

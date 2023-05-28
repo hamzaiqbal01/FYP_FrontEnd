@@ -1,0 +1,11 @@
+body {
+  background-color: #f3f0ea;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(169deg, #f3f0ea 2%, #f3f0ea 83%),
+    url("./Components/assets/images/Group\ 27\ \(5\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  scroll-behavior: smooth;
+}

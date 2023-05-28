@@ -1,0 +1,10 @@
+.AboutSection h4 {
+  font-weight: bold;
+}
+.AboutSection .aboutParagraph {
+  text-align: justify;
+}
+.AboutSection .botanist-btn {
+  background-color: #d58520;
+  color: white;
+}/*# sourceMappingURL=About.css.map */

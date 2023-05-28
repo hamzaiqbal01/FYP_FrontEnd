@@ -1,0 +1,80 @@
+nav .navLogo img {
+  max-width: 68px;
+}
+nav .btngroup {
+  justify-self: end;
+  background-color: aqua;
+}
+nav button img {
+  width: 32px;
+}
+nav .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .menu a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  padding: 3px 0px !important;
+}
+nav .menu .active {
+  border-bottom: 2px solid #d58520;
+}
+nav .menu li a::after {
+  content: "";
+  position: absolute;
+  background-color: #d58520;
+  height: 1px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+nav .menu a:hover::after {
+  width: 100%;
+}
+nav .nav-item {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+nav a {
+  color: #142e38 !important;
+}
+nav .btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .btn-group .lang-select {
+  color: white;
+  background: #142e38;
+  border-radius: 7px;
+}
+nav .btn-group .login-btn {
+  border: 1px solid #142e38;
+  font-weight: bold;
+}
+@media screen and (max-width: 992px) {
+  nav #nav-toggle-button {
+    border: 1px solid transparent !important;
+  }
+  nav #nav-toggle-button:focus {
+    border: 1px solid transparent !important;
+    outline: none !important;
+    box-shadow: 0 0;
+  }
+  nav .navLogo img {
+    max-width: 68px;
+  }
+  nav .nav-item {
+    text-align: center;
+    margin: 10px 1px;
+  }
+  nav .btn-group {
+    position: absolute;
+    right: 84px;
+    top: 36px;
+  }
+}/*# sourceMappingURL=navbar.css.map */

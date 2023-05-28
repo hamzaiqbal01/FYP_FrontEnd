@@ -1,0 +1,11 @@
+.detection-section h3,
+.detection-section p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  word-spacing: 4px;
+}
+.detection-section .short-line {
+  color: #d58520;
+}/*# sourceMappingURL=DiseaseDectionSection.css.map */

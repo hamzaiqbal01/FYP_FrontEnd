@@ -1,0 +1,83 @@
+.card {
+  height: 23rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(2px);
+  /* border-right: 1px solid rgba(255, 255, 255, 0.1); */
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+  border: 3px solid transparent;
+  box-shadow: -1px 5px 20px rgba(110, 108, 108, 0.2);
+  padding: 16px;
+  padding-bottom: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  z-index: 10;
+}
+.card .cardImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shoesHeading {
+  color: #b7f21e;
+  font-family: blazed;
+}
+
+.card,
+.card * {
+  box-sizing: border-box;
+  transition: 400ms;
+}
+
+.card img {
+  display: block;
+  width: 18vh;
+  height: auto;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.cardTitle {
+  text-align: center;
+  color: white;
+  font-size: 1.25rem;
+  /* font-weight: bold; */
+}
+
+.cardContent {
+  text-align: center;
+  color: #4d5862;
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+.cardContent p {
+  font-style: italic;
+}
+
+.btnSection button {
+  outline: none;
+  border: 1px solid transparent;
+  padding: 4px 22px;
+  border-radius: 8px;
+  background: #d58623;
+  color: white;
+}
+
+.cardContent p::first-letter {
+  color: #b7f21e;
+  font-size: 20px;
+}
+
+.icons img {
+  width: 40px;
+}/*# sourceMappingURL=Card.css.map */

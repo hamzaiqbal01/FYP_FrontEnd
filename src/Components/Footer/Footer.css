@@ -1,0 +1,29 @@
+.footer {
+  border-top: 1px solid #d1cccc;
+}
+.footer .logoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .logoSection img {
+  max-width: 22%;
+}
+.footer .ContactSection h4 {
+  font-weight: bold;
+}
+.footer .ContactSection .info-section {
+  display: flex;
+  flex-direction: row;
+}
+.footer .ContactSection .info-section span {
+  font-weight: bold;
+}
+.footer .QuickLinsSection {
+  display: flex;
+  flex-direction: column;
+}
+.footer .QuickLinsSection h4 {
+  font-weight: bold;
+}/*# sourceMappingURL=Footer.css.map */

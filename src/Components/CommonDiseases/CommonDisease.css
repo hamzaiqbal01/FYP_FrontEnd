@@ -1,0 +1,44 @@
+.swiperCard {
+  margin-right: 0 !important;
+  border-radius: 10px;
+  height: 24vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  color: white;
+}
+.swiperCard p {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 4px;
+  margin: 0px;
+  opacity: 0;
+  transition: 0.8s;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.swiperCard:hover p {
+  opacity: 1;
+}
+
+.swiperCard1 {
+  background-image: url("../assets/images/CommonDisease1.png");
+}
+
+.swiperCard2 {
+  background-image: url("../assets/images/CommonDisease2.png");
+}
+
+.swiperCard3 {
+  background-image: url("../assets/images/CommonDiseas3.png");
+}
+
+.swiperCard4 {
+  background-image: url("../assets/images/CommonDisease4.png");
+}
+
+.swiperCard5 {
+  background-image: url("../assets/images/CommonDisease5.png");
+}/*# sourceMappingURL=CommonDisease.css.map */
