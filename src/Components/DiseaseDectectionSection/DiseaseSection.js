@@ -21,18 +21,23 @@ export default function DiseaseSection() {
           <div className="row catagory-section col-md-12  py-5">
             <Card
               link="/searchByImg"
-              heading="Search By Image"
+              heading={t("Search By Image")}
               image={require("../assets/images/cardImg1.png")}
+              para={t("Find out disease in your wheat by uploading a picture.")}
             />
             <Card
               link="/searchByName"
-              heading="Search By Disease"
+              heading={t("Search By Disease")}
               image={require("../assets/images/CardImg2.png")}
+              para={t(
+                "Search for information on specific wheat disease by entering name."
+              )}
             />
             <Card
               link="/searchBySymptoms"
-              heading="Search By Symptoms"
+              heading={t("Search By Symptoms")}
               image={require("../assets/images/Cardimg3.png")}
+              para={t("Search for disease in your wheat based on symptoms.")}
             />
           </div>
         </div>

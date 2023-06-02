@@ -1,18 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/swiper-bundle.min.css";
 import "swiper/css/autoplay";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 export default function CommonDiseases() {
+  const [changeLang, setLang] = useState(0);
+  const { t, i18n } = useTranslation();
+  const handleClick = (e) => {
+    i18next.changeLanguage(e.target.value);
+  };
+  const handleDropdownClick = () => {
+    setLang(1);
+  };
   return (
     <>
       <div className="container-fluid detection-section mt-4">
         <div className="container">
           <div className="row col-md-4 mx-auto mt-5  heading-para-row">
-            <h3 className="fw-bold">Most Common Diseases</h3>
+            <h3 className="fw-bold">{t("Most Common Diseases")}</h3>
             <p className="short-line fst-italic">
-              Following are Most Common Diseases
+              {t("Following are Most Common Diseases")}
             </p>
           </div>
           <div className="row col-md-9 mx-auto  py-4 ">

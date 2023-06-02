@@ -4,7 +4,7 @@
   justify-content: center;
 }
 .search-dise-img .img-upload-section .border-section {
-  height: 40vh;
+  height: 44vh;
   border: 3px dashed #dea35a;
   border-radius: 10px;
   display: flex;
@@ -13,7 +13,7 @@
   flex-direction: column;
 }
 .search-dise-img .img-upload-section .border-section img {
-  max-width: 5vw;
+  max-width: 10vw;
 }
 .search-dise-img .img-upload-section .border-section .file {
   position: relative;
@@ -40,7 +40,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 40vh;
 }
 .search-dise-img .preview-detect-section Button {
   border: 1px solid transparent;
@@ -72,4 +71,12 @@
   background-size: cover;
   border-radius: 13px;
   opacity: 0.8;
+}
+
+.dis-name {
+  gap: 0px 99px;
+}
+
+.symptreat p {
+  text-align: justify;
 }/*# sourceMappingURL=SearchDiseaseByImage.css.map */

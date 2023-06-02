@@ -111,15 +111,19 @@ export default function SearchBySymptoms() {
               {console.log(results)}
               {results.length > 0 ? (
                 <div>
-                  <div>{results[0].desaese_name}</div>
+                  <h3>{results[0].desaese_name}</h3>
+                  <h5 className="fw-bold">Symptoms</h5>
                   <ul>
                     <li>{results[0].symptoms[0]}</li>
                     <li>{results[0].symptoms[1]}</li>
                     <li>{results[0].symptoms[2]}</li>
                   </ul>
-                  <div>{results[0].treatment}</div>
+                  <h5 className="fw-bold">Treatment</h5>
+                  <p>{results[0].treatment}</p>
                 </div>
-              ) : null}
+              ) : (
+                <>Disease Not found</>
+              )}
             </div>
           </div>
         </div>

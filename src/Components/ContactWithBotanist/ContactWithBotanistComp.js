@@ -4,6 +4,8 @@ import Tilt from "react-parallax-tilt";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 export default function ContactWithBotanistComp() {
   const notify = () => toast("Message Sent Boatnist will Contact");
@@ -28,7 +30,10 @@ export default function ContactWithBotanistComp() {
       );
     e.target.reset();
   };
-
+  const { t, i18n } = useTranslation();
+  const handleClick = (e) => {
+    i18next.changeLanguage(e.target.value);
+  };
   return (
     <div>
       <ToastContainer />
@@ -41,7 +46,7 @@ export default function ContactWithBotanistComp() {
             </Tilt>
           </section>
           <section className="contactSection col-md-5 ">
-            <h4 className="mb-4">Let's Contact with Botanist</h4>
+            <h4 className="mb-4">{t("Let's Contact with Botanist")}</h4>
             <form action="" onSubmit={sendEmail}>
               <label className="my-1 mt-3">Name</label>
               <input
@@ -59,14 +64,14 @@ export default function ContactWithBotanistComp() {
                 required
                 name="email_id"
               />
-              <label className="my-1 mt-3">Subject</label>
+              <label className="my-1 mt-3">{t("Subject")}</label>
               <input
                 type="text"
                 className="my-1"
                 placeholder="I have Problem in ......"
                 name="subject"
               />
-              <label className="my-1 mt-3">Message</label>
+              <label className="my-1 mt-3">{t("Message")}</label>
               <textarea
                 type="text"
                 className="my-1"

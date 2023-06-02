@@ -44,4 +44,8 @@
   border-radius: 8px;
   background: #d58623;
   color: white;
+}
+
+.blogs-section .img-section img {
+  width: 11rem;
 }/*# sourceMappingURL=Blogs.css.map */

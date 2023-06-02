@@ -9,10 +9,7 @@ export default function card(props) {
         </div>
 
         <div className="cardContent">
-          <p className="font-italic">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
-            ipsum dolor sit
-          </p>
+          <p className="font-italic">{props.para}</p>
           <div className="btnSection mb-3">
             <Link to={props.link}>
               {" "}

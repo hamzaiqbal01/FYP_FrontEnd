@@ -7,18 +7,20 @@ export default function SearchByName() {
   const [discaseList, SetDiscaseList] = useState([]);
   const [diseaseData, setDiseaseData] = useState([]);
   const diseaseList = [
-    "Leaf Rust",
+    "Brown Rust",
+    "Yellow Rust",
     "Stripe Rust",
-    "Leaf Rust",
-    "Stripe Rust",
-    "Leaf Rust",
-    "Stripe Rust",
-    "Leaf Rust",
-    "Stripe Rust",
-    "Leaf Rust",
-    "Stripe Rust",
-    "Leaf Rust",
-    "Stripe Rust",
+    "Stem Rust",
+    "Powdery Mildew",
+    "Septoria Leaf Blotch",
+    "Tan Spot",
+    "Head Blight ",
+    "Loose Smut",
+    "Karnal Bunt",
+    "Root Rot",
+    "Leaf Blight",
+    "Barley Yellow Dwarf Virus",
+    "Wheat Streak Mosaic Virus",
   ];
 
   const imgStyle = {
@@ -125,16 +127,15 @@ export default function SearchByName() {
                     return (
                       <div className="modal-data">
                         <div className="modal-text">
-                          <h1>{item.name}</h1>
-                          <h3>Symptoms</h3>
-                          <p>{item.symptoms}</p>
-                          <p>{item.treatment}</p>
-                        </div>
-                        <div className="modal-img-sec">
-                          {/* <img src={item.madicineImage} alt="Base64 Image" /> */}
+                          <h2 className="modal-main-heading">{item.name}</h2>
                           <img
                             src={"data:image/png;base64," + item.madicineImage}
+                            className="float-end ms-4 "
                           />
+                          <h4 className="mt-4 fw-bold">Symptoms</h4>
+                          <p>{item.symptoms}</p>
+                          <h4 className="fw-bold">Treatment</h4>
+                          <p>{item.treatment}</p>
                         </div>
                       </div>
                     );

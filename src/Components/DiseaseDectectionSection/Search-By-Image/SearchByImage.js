@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import css from "./SearchDiseaseByImage.css";
 import upimg from "./img/UploadIMG.png";
 import axios from "axios";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 export default function SearchByImage() {
   const [loading, setLoading] = useState(false);
@@ -52,14 +54,18 @@ export default function SearchByImage() {
       console.error("Error:", error);
     }
   };
+  const { t, i18n } = useTranslation();
+  const handleClick = (e) => {
+    i18next.changeLanguage(e.target.value);
+  };
 
   return (
     <>
       <div>
         <div className="container">
-          <div className="contact-with-botanist search-dise-img p-4 col-md-10 mx-auto row mt-5">
+          <div className="contact-with-botanist search-dise-img flex-column p-4 col-md-10 mx-auto row mt-5">
             <h4 className="mx-auto col-md-6 mt-3 mb-5">
-              Let's Detect the Disease
+              {t("Let's Detect the Disease")}
             </h4>
             <div className="img-upload-section mb-5  col-md-7">
               <div className="border-section">
@@ -68,8 +74,8 @@ export default function SearchByImage() {
                 ) : (
                   <img src={upimg} alt="img" />
                 )}
-                <div class="file up-btn col-md-4 mt-4">
-                  Upload Image
+                <div class="file up-btn col-md-4 my-4">
+                  {t("Upload Image")}
                   <input
                     type="file"
                     name="file"
@@ -79,19 +85,29 @@ export default function SearchByImage() {
                 </div>
               </div>
             </div>
-            <div className="preview-detect-section  col-md-5">
+            <div className="preview-detect-section  ">
               {loading && <p>Loading...</p>}
               {result && (
                 <>
-                  <p>{result.class}</p>
-                  <p>{(result.confidence * 100).toFixed(2)}%</p>
+                  <div className="dis-name d-flex flex-row">
+                    <h5 className="fw-bold">{t("Disease Name")}</h5>
+                    <p>{result.class}</p>
+                  </div>
+                  <div className="dis-name d-flex flex-row">
+                    <h5 className="fw-bold">{t("Confidence")}</h5>
+                    <p>{(result.confidence * 100).toFixed(2)}%</p>
+                  </div>
                 </>
               )}
 
               {diseaseData && diseaseData.length > 0 ? (
                 <>
-                  <p>Disease symptoms: {diseaseData[0].symptoms}</p>
-                  <p>Disease treatment: {diseaseData[0].treatment}</p>
+                  <div className="symptreat">
+                    <h5 className="fw-bold">{t("Disease symptoms:")} </h5>
+                    <p>{t(diseaseData[0].symptoms)}</p>
+                    <h5 className="fw-bold">{t("Disease treatment:")} </h5>
+                    <p>{t(diseaseData[0].treatment)}</p>
+                  </div>
                 </>
               ) : (
                 <>{diseaseData === null ? <></> : <>Plant is healthy</>}</>

@@ -13,14 +13,17 @@ export default function AboutUs() {
             <section className=" AboutSection col-md-6 ">
               <h4>WHO WE ARE</h4>
               <p className="aboutParagraph mt-3">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
-                iste pariatur voluptas explicabo voluptate. Aspernatur laborum
-                accusamus delectus, odit tempora nisi ipsam itaque placeat eaque
-                vel facilis accusantium ullam, totam a minus excepturi nostrum!
+                The purpose of Wheat Buddy is to maximize wheat production by
+                helping users in early detection of disease in wheat based on
+                uploaded image, symptoms, and information on disease by just
+                providing name. Also directly connecting users to the
+                agriculture experts via email, for consulting on dealing with
+                wheat diseases. It contains blogs on latest updates regarding
+                disease spreading in wheat.
               </p>
-              <button className="btn botanist-btn col-md-4 mt-4">
+              {/* <button className="btn botanist-btn col-md-4 mt-4">
                 Learn More
-              </button>
+              </button> */}
             </section>
             <section className="imgSection col-md-6 ">
               <Tilt>
